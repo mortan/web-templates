@@ -1,6 +1,4 @@
 require.config({
-	baseUrl: "./scripts",
-
 	paths: {
 		"jquery": "lib/jquery-1.8.3.min",
 		"knockout": "lib/knockout-2.2.0",
@@ -13,8 +11,8 @@ require.config({
 
 require([
 	"knockout",
-	"viewModels/main",
+	"viewmodels/main",
 	"domReady!"
-], function(ko, MainViewModel) {
-    ko.applyBindings(new MainViewModel());
+], function(ko, ViewModel) {
+	ko.applyBindings(new ViewModel());
 });
